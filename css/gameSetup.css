@@ -1,0 +1,46 @@
+.bigButton
+{
+	display: block;
+}
+
+p{
+	display: inline;
+}
+
+label > input
+{ 
+  visibility: hidden; 
+  position: absolute; 
+}
+
+label > img
+{
+  margin: 10px;
+  width: 38px;
+  height: 38px;
+}
+
+label > input + img
+{
+  cursor: pointer;
+  
+  padding: 2px;
+
+  border-width: 2px;
+  border-radius: 5px;
+  
+  border-color: black;
+  border-style: dashed;
+}
+
+label > input:checked + img
+{
+  border-color: red;
+  border-style: solid;
+}
+
+label > input:disabled + img
+{
+  border-style: dotted;
+  border-color: gray;
+}

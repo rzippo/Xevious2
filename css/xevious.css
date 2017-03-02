@@ -1,0 +1,147 @@
+html { height: 100%; }
+
+body
+{
+    background-image: url("./../img/background.png");
+    background-size: cover;
+    background-color: lightgray;
+    font-family: Courier, monospace;
+
+    text-align: center;
+}
+
+h1{
+  font-size: 350%;
+  margin: 10px;
+  margin-top: 15px;
+
+  text-shadow: 0 0 5px red, 0 0 5px white ;
+}
+
+h2{
+  font-size: 250%;
+  margin: 8px;
+  margin-top: 12px;
+
+  text-shadow: 0 0 5px red, 0 0 5px white ;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.wrap
+{
+    display: inline-block;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+
+    padding: 30px;
+
+    border-radius: 10px;
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.simpleButton
+{
+    background: none;
+    border-style: hidden;
+
+    text-decoration: underline;
+    padding: 1px;
+    margin: 1px;
+}
+
+.simpleButton:disabled
+{
+    color: gray;
+}
+
+.mediumButton
+{
+    padding: 5px;
+    padding-left:8px;
+    padding-right: 8px;
+    font-family:inherit;
+    font-size:larger;
+    margin: 5px;
+    background-color:DeepSkyBlue;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: outset;
+
+    vertical-align: middle;
+}
+
+.bigButton
+{
+    vertical-align: middle;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding: 10px;
+    padding-left:15px;
+    padding-right: 15px;
+
+    font-family:inherit;
+    font-size:larger;
+    
+    background-color: DeepSkyBlue;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 8px;
+    border-style: outset;
+
+    vertical-align: middle;
+}
+
+.bigButton:disabled, .mediumButton:disabled
+{
+    border-style:dashed;
+    background-color: LightSkyBlue;
+    color: rgba(0,0,0,0.7);
+}
+
+a.bigButton
+{
+    text-decoration: none;
+    border-style: outset;
+    max-width: 150px;
+}
+
+a.bigButton:active
+{
+    border-style: inset;
+}
+
+.red
+{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+
+#home
+{
+    display: inline-block;
+    background-color: red;
+    padding: 5px;
+
+    width: 35px;
+    height: 35px;
+
+    vertical-align: middle;
+}
+
+#home > img
+{
+    max-width: 100%;
+    max-height: 100%;
+}

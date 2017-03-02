@@ -1,0 +1,32 @@
+.bigButton
+{
+	display: block;
+}
+
+p{
+	display: inline;
+	font-size: larger;
+	font-weight: bold;	
+}
+
+#gameSetup
+{
+	display: none;
+}
+
+#helpText
+{
+	display: none;
+
+	background-color: rgba(70, 70, 70, 0.9);
+	z-index: 1;
+	position: absolute;
+	top: 0; left: 0;
+}
+
+#helpText > p
+{
+	color: white;
+	font-size: 120%;
+	overflow: scroll;
+}

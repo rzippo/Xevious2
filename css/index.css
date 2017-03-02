@@ -1,0 +1,81 @@
+.wrap
+{
+	text-align: left;
+}
+
+#info
+{
+	display: block;
+	max-width: 200px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#messageArea
+{
+	font-weight: bold;
+}
+
+.inlineP
+{
+	display: inline;
+	margin-top: 10px;
+}
+
+.inputBox
+{
+	display: block;
+}
+
+.patternAlert
+{
+	font-weight: bold;
+	display: block;
+	margin: 4px;
+}
+
+input
+{
+	margin: 3px;
+	border-width: 2px;
+	border-radius: 4px;
+}
+
+#loginForm > input
+{
+	border-style: solid;
+	border-color: black;
+}
+
+#loginForm > input:disabled
+{
+	border-style: dashed;
+}
+
+#signInForm input
+{
+	border-style: dotted;
+	border-color: black;	
+}
+
+
+#signInForm input.missing
+{
+	border-style: dotted;
+	border-color: orange;
+	background-color: yellow;
+}
+
+#signInForm input.invalid
+{
+	border-style: dashed;
+	border-color: red;
+	background-color: orange;	
+}
+
+#signInForm input.valid
+{
+	border-style: solid;
+	border-color: green;
+	background-color: lightgreen;	
+}

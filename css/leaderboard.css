@@ -1,0 +1,51 @@
+table 
+{
+    margin: auto;
+    border-width: 2px;
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+th, td 
+{
+    border-width: 1px ;
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+}
+
+th, td 
+{
+    padding: 5px;
+}
+
+th 
+{
+    text-align: center;
+}
+
+tr 
+{
+    text-align: center;
+}
+
+tr[data-player="true"] 
+{
+    background-color: orange;
+}
+
+#gameSetupRow
+{
+	display: none;
+}
+
+#home
+{
+	position: absolute;
+	margin: 20px;
+
+	top:0;
+	left:0;
+}

@@ -1,0 +1,160 @@
+@font-face
+{
+    font-family: Pokemon;
+    src: url("./../fonts/PokemonEmerald.ttf") format('truetype');
+    src: url("./../fonts/PokemonEmerald.woff") format('woff');
+    src: url("./../fonts/PokemonEmerald.otf") format('opentype');
+}
+
+body
+{
+    font-family: Pokemon, Courier, monospace !important;
+}
+
+#gameArea
+{
+    min-width:500px;
+    min-height:300px;
+
+    width: 90%;
+    height: 80%;
+
+    background-color: lightgray;
+    background-repeat:repeat;
+
+	position: relative;
+	margin: auto;
+
+	border-width: 10px;
+    border-color: black;
+    border-style: double;
+    font-size: 18pt;
+
+}
+
+#gameArea > img
+{
+	position: absolute;
+}
+
+#helpLayer
+{
+    display: none;
+
+    min-width:500px;
+    min-height:300px;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0, 0.9);
+
+    z-index:3;
+    position:absolute;
+    left:0;
+    top:0;
+    
+    text-align: left;
+    overflow-y: scroll;
+    color:white; 
+}
+
+#helpLayer > p
+{
+    margin: 15px;
+}
+
+#pauseLayer
+{
+    min-width:500px;
+    min-height:300px;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.6);
+
+    z-index:2;
+    position:absolute;
+    left:0;
+    top:0;
+    
+    text-align: center;
+    color:white;
+}
+
+#pauseEmLabel
+{
+    color: red;
+    font-family: inherit;
+    font-size:larger;
+}
+
+#pausePreLabel
+{
+    position: absolute;
+    width:inherit;
+    font-family: inherit;
+    bottom: 50px;
+}
+
+#scoreBoard
+{
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.3);
+
+    z-index: 1;
+    position:relative;
+}
+
+#scoreBoard p, #ammo, #ammo > div, #ammo >p
+{
+    display: inline-block;
+    margin: 4px;
+}
+
+#scoreCounter
+{
+    width: 80px;
+    text-align:left;
+}
+
+#scoreWrap
+{
+    float:left;
+}
+
+#ammoWrap
+{
+    float: right;
+}
+
+#cooldownMessage
+{
+    visibility: hidden;
+}
+
+#cooldownCounter
+{
+    color: red;
+}
+
+#shieldMessage
+{
+    visibility: hidden;
+}
+
+#shieldCounter
+{
+    color: green;
+}
+
+.shielded
+{
+    padding: 2px;
+
+    border-color: red;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 15px;
+}
